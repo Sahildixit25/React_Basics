@@ -1,4 +1,6 @@
 import './App.css';
+import CustomHooks from './CustomHooks';
+import LifecycleDemo from './LifecycleDemo';
 import UseCallBackEx from './UseCallBackEx';
 import UseMemoEx from './UseMemoEx';
 
@@ -8,6 +10,10 @@ function App() {
      <UseCallBackEx />
      <hr />
      <UseMemoEx />
+     <hr />
+     <LifecycleDemo />
+     <hr />
+     <CustomHooks />
     </div>
   );
 }
