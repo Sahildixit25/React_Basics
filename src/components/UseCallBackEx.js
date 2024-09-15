@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import Todos from "./Todos";
+import Todos from "../commonMethods/Todos";
 
 const UseCallBackEx = () => {
   const [count, setCount] = useState(0);

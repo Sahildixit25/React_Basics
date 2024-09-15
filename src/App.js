@@ -1,6 +1,6 @@
 import "./App.css";
 import AppRoutes from "./AppRoutes";
-import Header from "./Header";
+import Header from "./components/Header";
 
 const USER_TYPES = {
   PUBLIC_USER: "Public user",

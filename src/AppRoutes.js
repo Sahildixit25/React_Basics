@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import UseCallBackEx from "./UseCallBackEx";
-import UseMemoEx from "./UseMemoEx";
-import LifecycleDemo from "./LifecycleDemo";
-import CustomHooks from "./CustomHooks";
+import UseCallBackEx from "./components/UseCallBackEx";
+import UseMemoEx from "./components/UseMemoEx";
+import LifecycleDemo from "./components/LifecycleDemo";
+import CustomHooks from "./components/CustomHooks";
 
 const AppRoutes = ({USER_TYPES,CURRENT_USER_TYPE}) => {
   return (
