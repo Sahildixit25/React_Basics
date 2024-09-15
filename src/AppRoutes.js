@@ -4,6 +4,7 @@ import UseCallBackEx from "./components/UseCallBackEx";
 import UseMemoEx from "./components/UseMemoEx";
 import LifecycleDemo from "./components/LifecycleDemo";
 import CustomHooks from "./components/CustomHooks";
+import Testing from "./components/Testing";
 
 const AppRoutes = ({USER_TYPES,CURRENT_USER_TYPE}) => {
   return (
@@ -13,6 +14,14 @@ const AppRoutes = ({USER_TYPES,CURRENT_USER_TYPE}) => {
         element={
           <PublicElement>
             <UseCallBackEx />
+          </PublicElement>
+        }
+      ></Route>
+      <Route
+        path="/testing"
+        element={
+          <PublicElement>
+            <Testing initialCount={0} />
           </PublicElement>
         }
       ></Route>
