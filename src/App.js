@@ -1,19 +1,20 @@
-import './App.css';
-import CustomHooks from './CustomHooks';
-import LifecycleDemo from './LifecycleDemo';
-import UseCallBackEx from './UseCallBackEx';
-import UseMemoEx from './UseMemoEx';
+import "./App.css";
+import AppRoutes from "./AppRoutes";
+import Header from "./Header";
+
+const USER_TYPES = {
+  PUBLIC_USER: "Public user",
+  NORMAL_USER: "Normal user",
+  ADMIN_USER: "Admin user",
+};
+
+const CURRENT_USER_TYPE = USER_TYPES.ADMIN_USER;
 
 function App() {
   return (
     <div className="App">
-     <UseCallBackEx />
-     <hr />
-     <UseMemoEx />
-     <hr />
-     <LifecycleDemo />
-     <hr />
-     <CustomHooks />
+      <Header CURRENT_USER_TYPE={CURRENT_USER_TYPE}  />
+      <AppRoutes USER_TYPES={USER_TYPES} CURRENT_USER_TYPE={CURRENT_USER_TYPE}  />
     </div>
   );
 }
