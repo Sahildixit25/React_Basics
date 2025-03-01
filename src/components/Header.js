@@ -9,6 +9,8 @@ const Header = ({CURRENT_USER_TYPE}) => {
         <Link style={{color : "white"}} to={"/useMemo"}>UseMemo</Link>
         <Link style={{color : "white"}} to={"/lifecycleDemo"}>LifeCycleDemo</Link>
         <Link style={{color : "white"}} to={"/customHooks"}>CustomHooks</Link>
+        <Link style={{color : "white"}} to={"/usetransition"}>Usetransition</Link>
+        <Link style={{color : "white"}} to={"/redux"}>Redux</Link>
         <div>You are logged in as : {CURRENT_USER_TYPE}</div>
     </div>
   )

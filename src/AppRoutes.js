@@ -5,6 +5,8 @@ import UseMemoEx from "./components/UseMemoEx";
 import LifecycleDemo from "./components/LifecycleDemo";
 import CustomHooks from "./components/CustomHooks";
 import Testing from "./components/Testing";
+import Usetransition from "./components/Usetransition";
+import ReduxExample from "./components/ReduxExample";
 
 const AppRoutes = ({USER_TYPES,CURRENT_USER_TYPE}) => {
   return (
@@ -14,6 +16,22 @@ const AppRoutes = ({USER_TYPES,CURRENT_USER_TYPE}) => {
         element={
           <PublicElement>
             <UseCallBackEx />
+          </PublicElement>
+        }
+      ></Route>
+      <Route
+        path="/usetransition"
+        element={
+          <PublicElement>
+            <Usetransition />
+          </PublicElement>
+        }
+      ></Route>
+      <Route
+        path="/redux"
+        element={
+          <PublicElement>
+            <ReduxExample />
           </PublicElement>
         }
       ></Route>

@@ -1,6 +1,8 @@
 import "./App.css";
 import AppRoutes from "./AppRoutes";
+import AddTaskForm from "./components/AddTaskForm";
 import Header from "./components/Header";
+import TaskList from "./components/TaskList";
 
 const USER_TYPES = {
   PUBLIC_USER: "Public user",
@@ -14,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <Header CURRENT_USER_TYPE={CURRENT_USER_TYPE}  />
-      <AppRoutes USER_TYPES={USER_TYPES} CURRENT_USER_TYPE={CURRENT_USER_TYPE}  />
+      <AppRoutes USER_TYPES={USER_TYPES} CURRENT_USER_TYPE={CURRENT_USER_TYPE}  />      
     </div>
   );
 }
