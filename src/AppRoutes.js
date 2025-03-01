@@ -7,6 +7,7 @@ import CustomHooks from "./components/CustomHooks";
 import Testing from "./components/Testing";
 import Usetransition from "./components/Usetransition";
 import ReduxExample from "./components/ReduxExample";
+import Table from "./components/Table";
 
 const AppRoutes = ({USER_TYPES,CURRENT_USER_TYPE}) => {
   return (
@@ -32,6 +33,14 @@ const AppRoutes = ({USER_TYPES,CURRENT_USER_TYPE}) => {
         element={
           <PublicElement>
             <ReduxExample />
+          </PublicElement>
+        }
+      ></Route>
+      <Route
+        path="/table"
+        element={
+          <PublicElement>
+            <Table />
           </PublicElement>
         }
       ></Route>
